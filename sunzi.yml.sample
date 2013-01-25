@@ -1,0 +1,28 @@
+---
+attributes:
+  ssh_key: id_rsa.pub
+  environment: production
+  ruby_version:
+  host:
+  app_name:
+  git_host:
+  db_user:
+  db_password:
+  db_name:
+
+recipes:
+  deployer: https://raw.github.com/Shift81/sunzi-recipes/master/ubuntu/precise/deployer.sh
+  one_ruby: https://raw.github.com/Shift81/sunzi-recipes/master/ubuntu/precise/one_ruby.sh
+  nginx_source: https://raw.github.com/Shift81/sunzi-recipes/master/ubuntu/precise/nginx_source.sh
+  postgres: https://raw.github.com/Shift81/sunzi-recipes/master/ubuntu/precise/postgres.sh
+  unicorn_vhost: https://raw.github.com/Shift81/sunzi-recipes/master/ubuntu/precise/unicorn_vhost.sh
+  rails_app: https://raw.github.com/Shift81/sunzi-recipes/master/ubuntu/precise/rails_app.sh
+  node_js: https://raw.github.com/Shift81/sunzi-recipes/master/ubuntu/precise/node_js.sh
+
+files:
+  - ~/.ssh/id_rsa.pub
+
+preferences:
+  erase_remote_folder: false
+  cache_remote_recipes: false
+  erase_local_folder: true
