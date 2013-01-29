@@ -1,6 +1,6 @@
 # Install nginx from source
 
-if test -x /usr/local/sbin/nginx ; then
+if test -x /opt/nginx ; then
   echo 'nginx already installed'
 else
   apt-get -y install libpcre3 libpcre3-dev libpcrecpp0 libssl-dev zlib1g-dev
