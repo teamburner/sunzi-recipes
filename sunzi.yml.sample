@@ -17,7 +17,7 @@ recipes:
   postgres: https://raw.github.com/Shift81/sunzi-recipes/master/ubuntu/precise/postgres.sh
   unicorn_vhost: https://raw.github.com/Shift81/sunzi-recipes/master/ubuntu/precise/unicorn_vhost.sh
   rails_app: https://raw.github.com/Shift81/sunzi-recipes/master/ubuntu/precise/rails_app.sh
-  node_js: https://raw.github.com/Shift81/sunzi-recipes/master/ubuntu/precise/node_js.sh
+  node_js: https://raw.github.com/Shift81/sunzi-recipes/master/ubuntu/precise/nodejs.sh
 
 files:
   - ~/.ssh/id_rsa.pub
