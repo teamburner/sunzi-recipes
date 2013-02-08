@@ -9,6 +9,9 @@ attributes:
   db_user:
   db_password:
   db_name:
+  s3_key:
+  s3_secret:
+  s3_bucket:
 
 recipes:
   deployer: https://raw.github.com/Shift81/sunzi-recipes/master/ubuntu/precise/deployer.sh
@@ -18,6 +21,8 @@ recipes:
   unicorn_vhost: https://raw.github.com/Shift81/sunzi-recipes/master/ubuntu/precise/unicorn_vhost.sh
   rails_app: https://raw.github.com/Shift81/sunzi-recipes/master/ubuntu/precise/rails_app.sh
   node_js: https://raw.github.com/Shift81/sunzi-recipes/master/ubuntu/precise/nodejs.sh
+  s3fs: https://raw.github.com/Shift81/sunzi-recipes/master/ubuntu/precise/s3fs.sh
+  pg_backup: https://raw.github.com/Shift81/sunzi-recipes/master/ubuntu/precise/pg_backup.sh
 
 files:
   - ~/.ssh/id_rsa.pub
