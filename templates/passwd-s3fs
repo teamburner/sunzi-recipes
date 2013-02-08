@@ -1,0 +1,1 @@
+<%= config["s3_key"] %>:<%= config["s3_secret"] %>
