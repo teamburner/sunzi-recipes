@@ -1,0 +1,4 @@
+02 * * * * postgres /usr/local/bin/pg_backup.sh hourly /mnt/s3/pg_backup <%= config["db_name"] %> 24 >> /mnt/s3/pg_backup/pg_backup.log 2>&1
+02 1 * * * postgres /usr/local/bin/pg_backup.sh daily /mnt/s3/pg_backup <%= config["db_name"] %> 5 >> /mnt/s3/pg_backup/pg_backup.log 2>&1
+02 3 * * 0 postgres /usr/local/bin/pg_backup.sh weekly /mnt/s3/pg_backup <%= config["db_name"] %> 4 >> /mnt/s3/pg_backup/pg_backup.log 2>&1
+02 5 1 * * postgres /usr/local/bin/pg_backup.sh monthly /mnt/s3/pg_backup <%= config["db_name"] %> 4 >> /mnt/s3/pg_backup/pg_backup.log 2>&1
